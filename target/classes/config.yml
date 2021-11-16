@@ -1,0 +1,33 @@
+Config:
+  Mensagens:
+    jumpJetpack: "JetPack Ativada"
+    breakBlock: ""
+    msg: "Plugin JetPack ativado dpaus"
+
+  Values:
+    value: 15
+    var: 8
+
+  Players:
+    player: "RodiPeterson"
+
+  Jetpack:
+    EnableFeedback: "true"
+
+    Iron:
+      Name: "§7§lJetpack de Ferro"
+      Lore: "Brilhante e polida como a cabeça da minha pica"
+    Gold:
+      Name: "§6§lJetpack de Ouro"
+      Lore: "Dourada e polida como a cabeça da minha pica"
+    Diamond:
+      Name: "§3§lJetpack de Diamante"
+      Lore: "Rara e polida como a cabeça da minha pica"
+    Netherite:
+      Name: "§8§lJetpack de Netherite"
+      Lore: "Preta e dura como a cabeça da minha pica"
+    Chainmail:
+      Name: "§f§lJetpack de Cota de Malha"
+      Lore: "Malhuda e polida como a cabeça da minha pica"
+
+
