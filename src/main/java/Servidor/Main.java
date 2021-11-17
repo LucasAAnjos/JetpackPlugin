@@ -3,14 +3,17 @@ package Servidor;
 import Servidor.Commands.Help;
 import Servidor.Commands.getJetpack;
 import Servidor.Commands.ToggleFX;
+import Servidor.Database.MYSQL;
 import Servidor.Events.InventoryClick;
 import Servidor.Events.PlayerEvents;
+import Servidor.Manager.PlayerFuelManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin  {
 
     private static Main instance;
+    private static MYSQL database;
 
     @Override
     public void onEnable() {
@@ -18,6 +21,8 @@ public class Main extends JavaPlugin  {
         loadConfig();
         regEvents();
         regCommands();
+        database = new MYSQL("root", "vertrigo", "localhost", 3306, "server");
+        PlayerFuelManager.insert();
     }
 
     private void regEvents(){
@@ -45,5 +50,8 @@ public class Main extends JavaPlugin  {
         return instance;
     }
 
+    public static MYSQL getDatabase() {
+        return database;
+    }
 }
 

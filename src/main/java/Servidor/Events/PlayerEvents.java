@@ -34,6 +34,7 @@ public class PlayerEvents implements Listener {
 
         if(!(new playerHasJetpack(p).hasJetpack()) && !fuel){
             e.setCancelled(true);
+
         }
 
         if(p.isFlying()) Bukkit.getScheduler().cancelTasks(getInstance());
